@@ -1,0 +1,3 @@
+Options +Indexes -Includes
+ReadmeName README.html
+RemoveHandler cgi-script .py

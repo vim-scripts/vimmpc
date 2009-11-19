@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 8.1.0" />
+<style type="text/css">
+/* Debug borders */
+p, li, dt, dd, div, pre, h1, h2, h3, h4, h5, h6 {
+/*
+  border: 1px solid red;
+*/
+}
+
+body {
+  margin: 1em 5% 1em 5%;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: fuchsia;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+tt {
+  color: navy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #527bbd;
+  font-family: sans-serif;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1 {
+  border-bottom: 2px solid silver;
+}
+h2 {
+  border-bottom: 2px solid silver;
+  padding-top: 0.5em;
+}
+
+div.sectionbody {
+  font-family: serif;
+  margin-left: 0;
+}
+
+hr {
+  border: 1px solid silver;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+pre {
+  padding: 0;
+  margin: 0;
+}
+
+span#author {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+span#email {
+}
+span#revision {
+  font-family: sans-serif;
+}
+
+div#footer {
+  font-family: sans-serif;
+  font-size: small;
+  border-top: 2px solid silver;
+  padding-top: 0.5em;
+  margin-top: 4.0em;
+}
+div#footer-text {
+  float: left;
+  padding-bottom: 0.5em;
+}
+div#footer-badges {
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+div#preamble,
+div.tableblock, div.imageblock, div.exampleblock, div.verseblock,
+div.quoteblock, div.literalblock, div.listingblock, div.sidebarblock,
+div.admonitionblock {
+  margin-right: 10%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+div.admonitionblock {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+div.content { /* Block element content. */
+  padding: 0;
+}
+
+/* Block element titles. */
+div.title, caption.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+div.title + * {
+  margin-top: 0;
+}
+
+td div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content div.title:first-child {
+  margin-top: 0.0em;
+}
+div.content + div.title {
+  margin-top: 0.0em;
+}
+
+div.sidebarblock > div.content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+div.listingblock {
+  margin-right: 0%;
+}
+div.listingblock > div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock > div.content {
+  padding-left: 2.0em;
+}
+
+div.attribution {
+  text-align: right;
+}
+div.verseblock + div.attribution {
+  text-align: left;
+}
+
+div.admonitionblock .icon {
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #527bbd;
+  padding-right: 0.5em;
+}
+div.admonitionblock td.content {
+  padding-left: 0.5em;
+  border-left: 2px solid silver;
+}
+
+div.exampleblock > div.content {
+  border-left: 2px solid silver;
+  padding: 0.5em;
+}
+
+div.verseblock div.content {
+  white-space: pre;
+}
+
+div.imageblock div.content { padding-left: 0; }
+div.imageblock img { border: 1px solid silver; }
+span.image img { border-style: none; }
+
+dl {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+dt {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-style: italic;
+}
+dd > *:first-child {
+  margin-top: 0;
+}
+
+ul, ol {
+    list-style-position: outside;
+}
+ol.olist2 {
+  list-style-type: lower-alpha;
+}
+
+div.tableblock > table {
+  border: 3px solid #527bbd;
+}
+thead {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+tfoot {
+  font-weight: bold;
+}
+
+div.hlist {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+td.hlist1 {
+  vertical-align: top;
+  font-style: italic;
+  padding-right: 0.8em;
+}
+td.hlist2 {
+  vertical-align: top;
+}
+
+@media print {
+  div#footer-badges { display: none; }
+}
+
+div#toctitle {
+  color: #527bbd;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.1em;
+}
+
+div.toclevel1, div.toclevel2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.toclevel2 {
+  margin-left: 2em;
+}
+/* Workarounds for IE6's broken and incomplete CSS2. */
+
+div.sidebar-content {
+  background: #ffffee;
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+div.sidebar-title, div.image-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 0.0em;
+  margin-bottom: 0.5em;
+}
+
+div.listingblock div.content {
+  border: 1px solid silver;
+  background: #f4f4f4;
+  padding: 0.5em;
+}
+
+div.quoteblock-content {
+  padding-left: 2.0em;
+}
+
+div.exampleblock-content {
+  border-left: 2px solid silver;
+  padding-left: 0.5em;
+}
+
+/* IE6 sets dynamically generated links as visited. */
+div#toc a:visited { color: blue; }
+</style>
+<title>Vimmpc README</title>
+</head>
+<body>
+<div id="header">
+<h1>Vimmpc README</h1>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="sidebarblock">
+<div class="sidebar-content">
+<div class="sidebar-title">04 April 2007: Vimmpc 20070410 Released!</div>
+<p>Please see the header of vimmpc.vim for changes!</p>
+<p>This is the latest release of vimmpc.</p>
+</div></div>
+</div>
+</div>
+<h2>About</h2>
+<div class="sectionbody">
+<p>Vimmpc provides functionality for manipulating <a href="http://www.musicpd.org/">MPD</a>
+from within the <a href="http:://www.vim.org/">Vim</a> editor.</p>
+</div>
+<h2>Download</h2>
+<div class="sectionbody">
+<ul>
+<li>
+<p>
+<a href="vimmpc-20070410.tar.gz">vimmpc-20070410.tar.gz</a>::
+  A tarball distribution of the latest version of vimmpc.
+</p>
+</li>
+</ul>
+</div>
+<h2>Dependencies</h2>
+<div class="sectionbody">
+<p>The following dependencies are required to use vimmpc:</p>
+<ul>
+<li>
+<p>
+Vim 7.0+ (<a href="http://www.vim.org/">http://www.vim.org/</a>)
+</p>
+</li>
+<li>
+<p>
+Python 2.4+ (<a href="http://www.python.org/">http://www.python.org/</a>)
+</p>
+</li>
+<li>
+<p>
+mpdclient2.py (<a href="http://svn.navi.cx/misc/trunk/python/bemused/mpdclient2.py">http://svn.navi.cx/misc/trunk/python/bemused/mpdclient2.py</a>)
+</p>
+</li>
+</ul>
+</div>
+<h2>Installation</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre><tt>$ tar xzf vimmpc-(revision).tar.gz
+$ cd ~/.vim/plugin
+$ ln -s /path/to/vimmpc/vimmpc.vim
+$ ln -s /path/to/vimmpc/vimmpc.py</tt></pre>
+</div></div>
+<p>And finally:</p>
+<div class="literalblock">
+<div class="content">
+<pre><tt>$ vim -c <em>MPC</em></tt></pre>
+</div></div>
+<p>To complete the installation and launch Vim with MPC loaded.</p>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">Vim can be loaded as normal and vimmpc activated by use of :MPC</td>
+</tr></table>
+</div>
+</div>
+<h2>Screenshots</h2>
+<div class="sectionbody">
+<p>Here is a screenshot of vimmpc in action:</p>
+<p><span class="image">
+<img src="screenshots/1.png" alt="Playlist" title="Playlist" />
+</span></p>
+</div>
+<h2>Development</h2>
+<div class="sectionbody">
+<p>The development version can be checked out directly from the subversion
+repository <a href="http://svn.brokentrain.net/vimmpc/trunk">http://svn.brokentrain.net/vimmpc/trunk</a> or viewed directly
+online at <a href="http://svn.brokentrain.net/vimmpc/trunk">http://svn.brokentrain.net/vimmpc/trunk</a>.</p>
+</div>
+<h2>Contact</h2>
+<div class="sectionbody">
+<p>Please direct any questions, comments, patches, bugs to:
+<a href="mailto:gavin@brokentrain.net">gavin@brokentrain.net</a></p>
+</div>
+<h2>COPYING</h2>
+<div class="sectionbody">
+<p>Copyright &#169; 2006-2007 Gavin Gilmour. Free use of this software is granted
+under the terms of the GNU General Public License (GPL).</p>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 10-Apr-2007 22:57:07 BST
+</div>
+</div>
+</body>
+</html>

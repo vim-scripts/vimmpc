@@ -1,0 +1,11 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2856
+
+Uploading this old utility due to popular demand (and to promote interest).
+
+About
+--------
+
+Vimmpc provides functionality for manipulating http://www.musicpd.org/
+from within Vim.
+
+Main site: http://gavin.brokentrain.net/projects/vimmpc/
